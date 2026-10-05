@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Pizza | Menú</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Kanit for bold, wide headings similar to their brand -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700;900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="logo">COOL<span>PIZZA</span>.</div>
+        <div class="nav-links">
+            <a href="#menu" class="hover-target">Menú</a>
+            <a href="#especialidades" class="hover-target">Especialidades</a>
+            <a href="#combos" class="hover-target">Combos</a>
+            <a href="tel:+528136081803" class="btn-primary hover-target">Llamar Ahora</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-label">NUESTRO MENÚ</div>
+                <h1 class="hero-title">PIZZAS <br><span class="highlight">ÉPICAS</span></h1>
+                <p class="hero-desc">Descubre el verdadero sabor urbano. Ingredientes premium, combinaciones extremas.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn-primary hover-target">Ver Todo</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- An epic floating pizza using one of our generated images -->
+                <div class="hero-pizza-img"></div>
+            </div>
+        </section>
+
+        <!-- MARQUEE BANNER -->
+        <div class="marquee-container bg-pink text-white">
+            <div class="marquee-content">
+                <span>MÁS QUE PIZZA, UNA EXPERIENCIA COOL ⚡️</span>
+                <span>MÁS QUE PIZZA, UNA EXPERIENCIA COOL ⚡️</span>
+                <span>MÁS QUE PIZZA, UNA EXPERIENCIA COOL ⚡️</span>
+                <span>MÁS QUE PIZZA, UNA EXPERIENCIA COOL ⚡️</span>
+            </div>
+        </div>
+
+        <!-- PIZZA 1 INGREDIENTE -->
+        <section class="menu-section basic-pizzas bg-light">
+            <div class="section-header center-header">
+                <h2 class="text-pink">PIZZA <br><span class="text-purple-light">1 INGREDIENTE</span></h2>
+            </div>
+            
+            <div class="basic-grid">
+                <div class="basic-item"><span>Pepperoni</span> <span class="basic-price">$109</span></div>
+                <div class="basic-item"><span>Jamón</span> <span class="basic-price">$129</span></div>
+                <div class="basic-item"><span>Tocino</span> <span class="basic-price">$119</span></div>
+                <div class="basic-item"><span>Champiñón</span> <span class="basic-price">$119</span></div>
+                <div class="basic-item"><span>Chorizo</span> <span class="basic-price">$119</span></div>
+                <div class="basic-item"><span>Extra queso</span> <span class="basic-price">$109</span></div>
+                
+                <div class="basic-item"><span>Salchicha Italiana</span> <span class="basic-price">$119</span></div>
+                <div class="basic-item"><span>Jalapeño</span> <span class="basic-price">$119</span></div>
+                <div class="basic-item"><span>Piña</span> <span class="basic-price">$119</span></div>
+                <div class="basic-item"><span>Morrón</span> <span class="basic-price">$119</span></div>
+                <div class="basic-item"><span>Cebolla</span> <span class="basic-price">$119</span></div>
+            </div>
+        </section>
+
+        <!-- PIZZAS ÉPICAS (Image Cards) -->
+        <section id="menu" class="menu-section bg-dark noise-overlay">
+            <div class="section-header">
+                <h2 class="text-orange">PIZZAS <br>ÉPICAS</h2>
+                <div class="header-line bg-orange"></div>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-item hover-target">
+                    <div class="item-visual" style="background: url('assets/pizza_pepperoni.jpg') center/cover;">
+                        <span class="price">$149</span>
+                    </div>
+                    <div class="item-info text-dark">
+                        <h3>ÉPICA DE PEPPERONI</h3>
+                        <p>Pepperoni, más 3 veces más pepperoni.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="menu-item hover-target">
+                    <div class="item-visual" style="background: url('assets/pizza_mushroom.jpg') center/cover;">
+                        <span class="price">$149</span>
+                    </div>
+                    <div class="item-info text-dark">
+                        <h3>ÉPICA DE CHAMPIÑÓN</h3>
+                        <p>Pepperoni, champiñón, más pepperoni y más champiñón.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="menu-item hover-target">
+                    <div class="item-visual" style="background: url('assets/pizza_jalapeno.jpg') center/cover;">
+                        <span class="price">$149</span>
+                    </div>
+                    <div class="item-info text-dark">
+                        <h3>ÉPICA DE JALAPEÑO</h3>
+                        <p>Pepperoni, jalapeño, más pepperoni y más jalapeño.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESPECIALIDADES (Dark Purple Background, Text List) -->
+        <section id="especialidades" class="menu-section bg-purple text-white">
+            <div class="section-header center-header">
+                <h2 class="text-yellow">ESPECIALIDADES</h2>
+            </div>
+
+            <div class="specialties-grid">
+                <div class="spec-item">
+                    <div class="spec-header">
+                        <h3>DOBLE CARNE</h3>
+                        <span class="spec-price text-yellow">$139</span>
+                    </div>
+                    <p>Pepperoni y jamón</p>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-header">
+                        <h3>SUPREMA</h3>
+                        <span class="spec-price text-yellow">$179</span>
+                    </div>
+                    <p>Pepperoni, salchicha italiana, morrón, cebolla y champiñón</p>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-header">
+                        <h3>MEXICANA</h3>
+                        <span class="spec-price text-yellow">$159</span>
+                    </div>
+                    <p>Salchicha italiana, chorizo, cebolla y jalapeño</p>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-header">
+                        <h3>3 CARNES</h3>
+                        <span class="spec-price text-yellow">$179</span>
+                    </div>
+                    <p>Pepperoni, salchicha italiana y tocino</p>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-header">
+                        <h3>ORILLA RELLENA</h3>
+                        <span class="spec-price text-yellow">$159</span>
+                    </div>
+                    <p>Queso de tira y tu ingrediente favorito</p>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-header">
+                        <h3>BONELESS</h3>
+                        <span class="spec-price text-yellow">$189</span>
+                    </div>
+                    <p>Boneless, aderezo y tu salsa favorita</p>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-header">
+                        <h3>HAWAIANA</h3>
+                        <span class="spec-price text-yellow">$159</span>
+                    </div>
+                    <p>Jamón y piña</p>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-header">
+                        <h3>CHICHARRÓN</h3>
+                        <span class="spec-price text-yellow">$189</span>
+                    </div>
+                    <p>Chicharrón de la Ramos y salsa verde</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMBOS -->
+        <section id="combos" class="menu-section bg-dark text-white">
+            <div class="section-header">
+                <h2 class="text-blue">NUESTROS <br>COMBOS</h2>
+                <div class="header-line bg-blue"></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-item combo hover-target">
+                    <div class="item-visual" style="background: url('assets/pizza_combo.jpg') center/cover;">
+                        <span class="price">$589</span>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="text-yellow">COMBO PARTY</h3>
+                        <p>5 pizzas de pepperoni + refresco 2.5 l.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item combo hover-target">
+                    <div class="item-visual" style="background: url('assets/pizza_combo.jpg') center/cover;">
+                        <span class="price">$199</span>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="text-pink">COMBO COOL</h3>
+                        <p>1 pizza de pepperoni + papas crisscut + refresco 1.5 l.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item combo hover-target">
+                    <div class="item-visual" style="background: url('assets/pizza_combo.jpg') center/cover;">
+                        <span class="price">$319</span>
+                    </div>
+                    <div class="item-info">
+                        <h3 class="text-purple-light">COMBO FAMILIAR</h3>
+                        <p>2 pizzas de pepperoni + papas crisscut + refresco 2.5 l.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXTRAS -->
+        <section class="extras-section bg-light">
+            <div class="extras-grid">
+                <!-- COMPLEMENTOS -->
+                <div class="extras-col">
+                    <h2 class="text-purple">COMPLEMENTOS</h2>
+                    <ul class="extras-list">
+                        <li><span>ALITAS</span> <span class="extras-price">$109</span></li>
+                        <li><span>BONELESS</span> <span class="extras-price">$89</span></li>
+                        <li><span>PAPAS CRISSCUT</span> <span class="extras-price">$50</span></li>
+                        <li><span>PAPAS GAJO</span> <span class="extras-price">$50</span></li>
+                    </ul>
+                </div>
+                <!-- BEBIDAS -->
+                <div class="extras-col">
+                    <h2 class="text-pink">BEBIDAS</h2>
+                    <ul class="extras-list">
+                        <li><span>AGUA</span> <span class="extras-price">$15</span></li>
+                        <li><span>REFRESCO EN LATA</span> <span class="extras-price">$25</span></li>
+                        <li><span>REFRESCO 1.5 L.</span> <span class="extras-price">$45</span></li>
+                        <li><span>REFRESCO 2 L.</span> <span class="extras-price">$50</span></li>
+                        <li><span>REFRESCO 2.5 L.</span> <span class="extras-price">$55</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ADEREZOS BANNER -->
+            <div class="aderezos-banner">
+                <h2 class="text-purple">ADEREZOS</h2>
+                <p>Mango Habanero • BBQ • Búfalo <br> Ranch Jalapeño • Ranch • Salsita Cool</p>
+                <span class="aderezo-price">$15</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">COOL<span>PIZZA</span>.</div>
+            <p>Diseñado para destacar. © 2026</p>
+        </div>
+    </footer>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
